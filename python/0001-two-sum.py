@@ -5,3 +5,13 @@ class Solution:
                 if nums[i] + nums[j] == target:
                     return [i, j]
 
+# the above solution is no longer accepted
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        res = {}
+        for ind, n in enumerate(nums):
+            if target-n in res:
+                return [res[target-n], ind]
+            else:
+                res[n] = ind
