@@ -7,7 +7,7 @@ class Solution:
 
 # the above solution is no longer accepted
 
-class Solution:
+class Solution2:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         res = {}
         for ind, n in enumerate(nums):
